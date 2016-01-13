@@ -1,0 +1,2 @@
+#!/bin/sh
+exec connect -5 -S localhost:9050 "$@"
