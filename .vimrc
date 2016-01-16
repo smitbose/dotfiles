@@ -25,6 +25,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
 "Plugin 'ervandew/supertab'
+Plugin 'terryma/vim-multiple-cursors'
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
@@ -126,6 +127,14 @@ vnoremap <C-c> "+y
 
 " Toggle comments
 map <C-_> <leader>c<Space>
+
+
+" Multi Select
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_next_key='<C-d>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
 
 
 
