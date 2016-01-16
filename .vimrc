@@ -75,12 +75,12 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 
 " Tab switch keys
-nnoremap <F3> :tabp<CR>
-nnoremap <F4>   :tabn<CR>
-nnoremap <C-w>   :tabnew<CR>
-inoremap <F3> <Esc>:tabp<CR>i
-inoremap <F4>   <Esc>:tabn<CR>i
-inoremap <C-w>     <Esc>:tabnew<CR>
+nnoremap <F3>  :tabp<CR>
+nnoremap <F4>  :tabn<CR>
+nnoremap <F5> :tabnew<CR>
+inoremap <F3>  <Esc>:tabp<CR>i
+inoremap <F4>  <Esc>:tabn<CR>i
+inoremap <F5> <Esc>:tabnew<CR>
 
 
 " YouCompleteMe config
@@ -126,3 +126,6 @@ vnoremap <C-c> "+y
 
 " Toggle comments
 map <C-_> <leader>c<Space>
+
+
+
