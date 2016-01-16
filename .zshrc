@@ -14,6 +14,9 @@ bindkey -e
 alias zz="cd $HOME/projects/"
 alias ff="cd $HOME/projects/fractal/Fractal"
 alias tor="sudo -u tor tor"
+alias ta="tmux attach -t"
+alias tn="tmux new -s"
+alias tl="tmux ls"
 
 export SOCKS5_PASSWORD="hello"
 export GIT_PROXY_COMMAND=~/.torgit
