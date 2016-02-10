@@ -26,6 +26,10 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
 "Plugin 'ervandew/supertab'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'Valloric/MatchTagAlways'
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
