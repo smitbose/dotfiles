@@ -22,4 +22,4 @@ export SOCKS5_PASSWORD="hello"
 export GIT_PROXY_COMMAND=~/.torgit
 
 export PATH=$PATH:/home/binayak/projects/omnetpp-4.6/bin
-export LD_LIBRARY_PATH=/home/binayak/projects/omnetpp-4.6/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/home/binayak/projects/omnetpp-4.6/lib:/usr/local/lib:$LD_LIBRARY_PATH

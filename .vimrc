@@ -30,6 +30,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'Valloric/MatchTagAlways'
+Plugin 'kchmck/vim-coffee-script'
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
@@ -112,6 +113,8 @@ set wildmenu
 " Color Scheme
 set background=dark
 colorscheme default
+hi SpellBad ctermfg=255 ctermbg=181 guifg=#yyyyyy guibg=#zzzzzz
+hi SpellCap ctermfg=255 ctermbg=181 guifg=#yyyyyy guibg=#zzzzzz
 
 
 " Move lines up/down
