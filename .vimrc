@@ -30,8 +30,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'Valloric/MatchTagAlways'
-Plugin 'kchmck/vim-coffee-script'
-
+Plugin 'sjl/gundo.vim'
 " colorschemes
 Plugin 'chriskempson/base16-vim'
 Plugin 'altercation/vim-colors-solarized'
@@ -72,7 +71,7 @@ let g:vundle_depth = 1
 " Airline config
 set laststatus=2
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'molokai'
+let g:airline_theme = 'dark'
 let g:airline#extensions#tabline#enabled = 1
 
 " Nerd Tree config
@@ -113,9 +112,6 @@ set wildmenu
 " Color Scheme
 set background=dark
 colorscheme default
-hi SpellBad ctermfg=255 ctermbg=181 guifg=#yyyyyy guibg=#zzzzzz
-hi SpellCap ctermfg=255 ctermbg=181 guifg=#yyyyyy guibg=#zzzzzz
-
 
 " Move lines up/down
 nnoremap <C-S-j> :m<Space>.+1<CR>
@@ -126,11 +122,11 @@ vnoremap <C-S-j> :m<Space>'>+1<CR>
 vnoremap <C-S-k> :m<Space>'<-2<CR>
 
 
+
 " Copy and Paste
 inoremap <C-v> <Esc>"+pi
-nnoremap <C-v> "+p
-vnoremap <C-c> "+y
-
+nnoremap <C-v> p
+vnoremap <C-c> y
 
 " Toggle comments
 map <C-_> <leader>c<Space>
@@ -143,5 +139,21 @@ let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
 
+
+let mapleader=","
+" toggle gundo
+nnoremap <leader>u :GundoToggle<CR>
+
+" edit vimrc/zshrc and load vimrc bindings
+nnoremap <leader>ev :vsp $MYVIMRC<CR>
+nnoremap <leader>ez :vsp ~/.zshrc<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>
+
+" save session
+nnoremap <leader>s :mksession<CR>
+
+
+" open ag.vim
+nnoremap <leader>a :Ag
 
 
